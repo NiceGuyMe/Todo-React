@@ -1,25 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import { Component, useState } from 'react';
 
-function App() {
+import {Todo} from './component/TodoComponent';
+/*function Td1() {
+  const [count, setCount] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>You clicked {count} times</h1>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </>
   );
+}
+
+
+class Td2 extends Component {
+    constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+  handleClick = () => {
+    this.setState((prev)=>{
+    return {count:prev.count+1} })
+    }
+
+  render() {    
+    return(
+    <>   
+      <h1>You clicked {this.state.count} times</h1>
+      <button onClick={this.handleClick}>
+        Click me
+  </button>
+     </>) 
+    
+
+  }
+}*/
+
+function App (){
+  return(
+    <>
+    <Todo/>
+    </>
+  )
 }
 
 export default App;

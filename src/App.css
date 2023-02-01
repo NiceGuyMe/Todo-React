@@ -1,38 +1,66 @@
-.App {
+body {
+  background-color: #2c2c2c;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input {
+  padding:1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoContainer {
+  border-radius: 30px;
+  width: 40vw;
+  position: absolute;
+  left: 10%; /* occupe la partie gauche de l'écran */
+  top: 50%; /* positionné au milieu verticalement */
+  transform: translateY(-50%); /* pour centrer verticalement */
+  background-color: white; /* couleur futuriste */
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.3); /* pour l'effet de levitation */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+  font-size: 30px;
+  list-style: none; /* enlève les puces */
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  text-align: center;
+  border-style: solid;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* pour l'effet de levitation */
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkbox{
+  border-radius: 10%;
+  width:14em;
+  height:6vh;
+}
+
+.todoContainer li {
+  background-color: #f80000e5;
+}
+
+.DoneContainer li {
+  background-color: #08f800da;
+}
+
+.DoneContainer {
+  border-radius: 30px;
+  width: 30vw;
+  position: absolute;
+  right: 10%; /* occupe la partie gauche de l'écran */
+  top: 50%; /* positionné au milieu verticalement */
+  transform: translateY(-50%); /* pour centrer verticalement */
+  background-color: rgb(255, 255, 255); /* couleur futuriste */
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.3); /* pour l'effet de levitation */
 }
