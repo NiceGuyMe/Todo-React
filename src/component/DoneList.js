@@ -1,9 +1,12 @@
 export function DoneList({ doneList }) {
   return (
-    <ul>
-      {doneList.map((e, index) => (
-        <li key={index}>{e}</li>
-      ))}
-    </ul>
+    <>
+      <h1>DONE</h1>
+      <ul>
+        {doneList.map((e, index) => (
+          <li key={index}>{e}</li>
+        ))}
+      </ul>
+    </>
   );
 }
