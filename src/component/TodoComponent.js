@@ -12,6 +12,8 @@ export function TodoApp() {
   const addToTodoList = (todo) => {
     if (todo !== "") {
       setTodoList([...todoList, todo]);
+    } else {
+      throw new Error("todo is empty");
     }
   };
 
@@ -24,9 +26,11 @@ export function TodoApp() {
 
   return (
     <>
+      <div className="todoinput">
+        <TodoInput onAddTodo={addToTodoList} />
+      </div>
       <div className="todoContainer">
         <div className="TodoList">
-          <TodoInput onAddTodo={addToTodoList} />
           <TodoList
             todoList={todoList}
             onCheckboxChange={handleCheckboxChange}

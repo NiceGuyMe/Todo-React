@@ -5,9 +5,8 @@ body {
 h1 {
   text-align: center;
 }
-
 .input {
-  padding:1.5em;
+  padding: 1.5em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -30,7 +29,7 @@ ul {
   list-style: none; /* enlève les puces */
 }
 
-li{
+li {
   text-align: center;
   border-style: solid;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* pour l'effet de levitation */
@@ -40,18 +39,20 @@ li{
   margin-right: 50px;
 }
 
-.checkbox{
+.checkbox {
   border-radius: 10%;
-  width:14em;
-  height:6vh;
+  width: 14em;
+  height: 6vh;
 }
 
-.todoContainer li  {
-  background-color: #f80000e5;
+.todoContainer li {
+  background-color: #eb1414e5;
+  border: 0px;
 }
 
 .DoneContainer li {
   background-color: #08f800da;
+  border: 0px;
 }
 
 .DoneContainer {

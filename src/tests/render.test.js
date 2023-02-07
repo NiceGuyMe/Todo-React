@@ -1,9 +1,29 @@
 import React from "react";
-import "@testing-library/jest-dom/extend-expect";
 import { TodoList } from "../component/TodoList";
 import { DoneList } from "../component/DoneList";
 import { TodoInput } from "../component/TodoInput";
 import { render, fireEvent, screen } from "@testing-library/react";
+import { TodoApp } from "../component/TodoComponent";
+
+test("snapshot TodoApp", () => {
+  const { component } = render(<TodoApp />);
+  expect(component).toMatchSnapshot();
+});
+
+test("snapshot TodoList", () => {
+  const { component } = render(<TodoList todoList={[]} />);
+  expect(component).toMatchSnapshot();
+});
+test("snapshot DoneList", () => {
+  const { component } = render(<DoneList doneList={[]} />);
+  expect(component).toMatchSnapshot();
+});
+
+test("snapshot TodoInput", () => {
+  const onAddTodo = jest.fn();
+  const { component } = render(<TodoInput onAddTodo={onAddTodo} />);
+  expect(component).toMatchSnapshot();
+});
 
 test("Show the Done header", function () {
   render(<DoneList doneList={[]} />);

@@ -16,7 +16,7 @@ export function TodoInput({ onAddTodo }) {
 
   return (
     <input
-    placeholder="Enter todo"
+      placeholder="Enter todo"
       className="input"
       type="text"
       value={todo}
