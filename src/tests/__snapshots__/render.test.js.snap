@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot DoneList 1`] = `undefined`;
+
+exports[`snapshot TodoApp 1`] = `undefined`;
+
+exports[`snapshot TodoInput 1`] = `undefined`;
+
+exports[`snapshot TodoList 1`] = `undefined`;
